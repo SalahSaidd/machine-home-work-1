@@ -15,6 +15,7 @@
 
     <EditText
         android:id="@+id/edit_content"
+        android:layout_below="@+id/edit_title"
         android:layout_width="500dp"
         android:layout_height="450dp"
         android:hint="@string/edit_content"
