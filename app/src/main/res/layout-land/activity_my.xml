@@ -9,7 +9,7 @@
 
     <EditText
         android:id="@+id/edit_title"
-        android:layout_width="500dp"
+        android:layout_width="700dp"
         android:layout_height="wrap_content"
         android:hint="@string/edit_title"
         android:inputType="text" />
@@ -17,30 +17,32 @@
     <EditText
         android:id="@+id/edit_content"
         android:layout_below="@+id/edit_title"
-        android:layout_width="500dp"
-        android:layout_height="400dp"
+        android:layout_width="700dp"
+        android:layout_height="250dp"
         android:hint="@string/edit_content"
         android:inputType="text" />
 
     <Button
         android:id="@+id/button_send"
         android:layout_below="@+id/edit_content"
-        android:layout_width="410dp"
+        android:layout_width="233dp"
         android:layout_height="wrap_content"
         android:text="@string/button_sent" />
 
     <Button
         android:id="@+id/button_cancel"
-        android:layout_below="@+id/button_send"
-        android:layout_width="410dp"
+        android:layout_below="@+id/edit_content"
+        android:layout_toRightOf="@id/button_send"
+        android:layout_width="233dp"
         android:layout_height="wrap_content"
         android:text="@string/button_cancel" />
 
     <Button
         android:id="@+id/button_clear"
-        android:layout_width="410dp"
+        android:layout_toRightOf="@id/button_cancel"
+        android:layout_width="233dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button_cancel"
+        android:layout_below="@+id/edit_content"
         android:text="@string/button_clear" />
 
 </RelativeLayout>
